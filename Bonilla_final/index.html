@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="A webpage about Kaijus">
+    <title>Kaijus</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body class="home-page">
+    <div id="wrapper">
+
+        <header onclick="kaijuRoar('sounds/roar.mp3')">
+            <h1 id="main-title">Kaijus</h1>
+        </header>
+
+        <main>
+
+            <article>
+                <h2>The Strange Beasts</h2>
+                <section>
+                    <h3>What are they?</h3>
+                    <p>Kaiju is a Japanese term that is commonly associated with media involving giant monsters. A
+                        subgenre of science-fiction, more precisely monster films, its widespread contemporary use is
+                        credited to tokusatsu (special effects) director Eiji Tsuburaya and filmmaker Ishirō Honda, who
+                        popularized the kaiju film genre by creating the Godzilla franchise and its spin-offs. The term
+                        can also refer to the monsters themselves, which are usually depicted attacking major
+                        cities, and battling either the military or other creatures. Kaiju are monstrous creatures that
+                        come in different sizes and shapes. All of them have different features, some more humanoid than
+                        others. Every kaiju possess a Core (核, Kaku), which is their vital organ and weakness, inside
+                        their body, and since every kaiju comes in a different type the location of the core changes
+                        accordingly.
+                    </p>
+                </section>
+
+                <div class="kaiju-flex-container">
+                    <div class="card-container" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="images/godzilla ff.png" alt="godzilla">
+                            </div>
+                            <div class="card-back">
+                                <h3>Fun Fact!</h3>
+                                <p>Every Kaiju is given a Fortitude level (フォルティチュード, Forutichūdo) which is a way for
+                                    the Defense Force to measure the creature's power and its potential threat to
+                                    humanity.[5] According to the Fortitude level, Kaiju are then classified power-wise.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kaiju-description">
+                        <h3>Abilities</h3>
+                        <p>
+                            All kaiju gain their powers from their Uni-organ (ユニ器官, Yuni-kikan), an organ containing
+                            their specific powers. Despite their common nature, each kaiju possesses different abilities
+                            and powers, so it's quite rare to find similar kaiju. Some powers most kaiju have in common
+                            are super strength, proliferation abilities, and great fortitude levels. Some of them are
+                            able to fly[1] and the most complex are even able to practice human language and, through
+                            that, can talk.
+                        </p>
+                    </div>
+
+
+                    <section>
+                        <h3>Types of Kaijus</h3>
+                        <p>Yoju (余よ獣じゅう, Yojū, lit. "Residual Beast") are smaller kaiju who accompany their Honju. There
+                            are
+                            usually numerous Yoju to assist a Honju, and some kind of Yoju can have proliferative organs
+                            as
+                            well. Yoju can appear in many ways, by traveling routes made by the Honju, latching onto the
+                            Honju, being created by the Honju, and more. Some Yoju can have a fortitude number above
+                            6.0,
+                            thus being a Honju-level threat while still being a Yoju.
+                            <br><br>
+                            Honju (本ホン獣じゅう, Honjū, lit. "Main Beast") are usually the biggest and most powerful kaiju,
+                            and
+                            the one who generates and guides all the other Yoju through their proliferative organs.
+                            Their
+                            fortitude level is usually above 6.0. A Honju with a fortitude level of 6.4 would require an
+                            entire Platoon of Defense Force soldiers to defeat it, and only a Captain or Vice-Captain
+                            could
+                            defeat one alone.
+                            <br><br>
+                            Daikaiju (大だい怪かい獣じゅう, Daikaijū, lit. "Large Monster") is a special category of kaiju. It is
+                            the
+                            name given to particularly strong kaiju, whose fortitude level exceeds the number 8.0.
+                            Having
+                            appeared ever since the Meireki era, these kinds of kaiju are part of the strongest
+                            category,
+                            with their power not necessarily being linked to their size, since Kafka, who has a
+                            fortitude
+                            level of 9.8 in his kaiju form, the highest seen thus far in the series, defeated multiple
+                            kaiju
+                            much larger than him in size. Due to their incredible power, Daikaiju can also be Honju and
+                            guide their group of Yoju (like Kaiju No. 10 with the Preondactyl Kaiju).[10] In spite of
+                            that,
+                            Daikaiju are not above operating individually on their own. According to Isao Shinomiya, the
+                            Defense Force presently has around two dozen elite officers who stand a chance at taking on
+                            a
+                            Daikaiju, less than ten in single-combat and when fighting a numbered Daikaiju, the number
+                            gets
+                            even lower.
+                            <br><br>
+                            Identified Kaiju (識しき別べつ怪かい獣じゅう, Shikibetsu Kaijū) are daikaiju that are extremely powerful
+                            and
+                            have a fortitude level of 9.0 or higher. Even if their fortitude level is lower than 9.0
+                            (like
+                            Kaiju No. 9, who had a fortitude level of 8.5 before shedding its skin), if there is a need
+                            for
+                            identification, then a codename will be given. While daikaiju of this caliber have always
+                            appeared in history, their identification numbers were implemented only after the fortitude
+                            observation system was established.
+                        </p>
+                    </section>
+                    <div class="kaiju-flex-container reverse">
+                        <div class="card-container" onclick="flipCard(this)">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/kaiju ff.png" alt="Kaiju">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Fun Fact!</h3>
+                                    <p>Kaiju has been theorized as being born from the immense energy produced by the
+                                        faults
+                                        in the earth, acting upon the underground substances, plants, and animals to
+                                        produce
+                                        them.[36] It was further elaborated as the Mysterious Larva was born from the
+                                        "Dragon Veins" deep within the earth after the hearts of the warriors formed a
+                                        core
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kaiju-description">
+                            <h3></h3>
+                            <p>The Kaiju themselves vary wildly in size, anywhere from 20 to 500 feet. Their bodies are
+                                typically an amalgam of reptilian, cephalopod and ichthyological traits. Nearly all
+                                Kaiju
+                                observed to date are pentaradially symmetrical, with body parts that typically come in
+                                pairs
+                                instead coming in sets of five.
+                                <br><br>
+                                The Kaiju have been observed to be highly aggressive, attacking most other entities on
+                                sight
+                                as well as frequently battling each other. Although spectacular, these fights are rarely
+                                fatal as Kaiju possess both supernatural durability and regenerative abilities. They
+                                also
+                                possess a variety of offensive thaumaturgical abilities as well, such as being able to
+                                exhale spellfire that does not extinguish underwater.
+                            </p>
+                        </div>
+                        <section>
+                            <p>The exact population of Kaiju is unknown, but as they have yet to deplete their primary
+                                food
+                                source, it appears that the Kaiju kill significantly fewer whales than Humans did during
+                                the
+                                era of industrial whaling. Given both the size and aggressive nature of the Kaiju, this
+                                is
+                                somewhat perplexing.
+                                <br><br>
+                                In addition to the problem of food, the colossal size of the Kaiju clearly violates the
+                                square-cube law, as well as introducing a variety of other scale related problems. In
+                                addition to possessing extensive non-Euclidean biology and abnormally thaumaturgically
+                                active cells, the Kaiju have a relatively low internal Hume value, lessening the effect
+                                of
+                                our reality's laws of physics on its body.
+                            </p>
+                    </div>
+                    </section>
+            </article>
+
+        </main>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="kaijus.html">Kaijus</a></li>
+                <li><a href="diy.html">DIY</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            <h2>Sources</h2>
+            <a href="https://en.wikipedia.org/wiki/Godzilla_(1954_film)" target="_blank">Wikipedia</a>
+            <br>
+            <a href="https://mythos-and-legends.fandom.com/wiki/Kaiju#Myths_and_Legends" target="_blank">Fandom</a>
+            <br>
+            <a href="https://kaijuhistorian.wordpress.com/kaiju-in-culture/kaiju-in-culture-japan/" target="_blank">The Kaiju Historian</a>
+            <br>
+            <a href="https://nekorandom.com/2025/11/29/fun-facts-and-trivia-about-godzilla-1954-film/" target="_blank">Neko Random</a>
+            <br>
+            <a href="https://pixabay.com/sound-effects/search/monster%20roar/?pagi=3" target="_blank">Pixabay</a>
+            <br>
+            <a href="https://www.classicmoviehub.com/facts-and-trivia/film/king-kong-vs-godzilla-1962/" target="_blank">Classic Movie Hub</a>
+            <br>
+            <a href="https://flickpulse.wordpress.com/2024/05/16/godzilla-2014-10-things-you-didnt-know/" target="_blank">Flick Pulse</a>
+            <br>
+            <a href="https://screenrant.com/king-kong-trivia-facts/" target="_blank">Screenrant</a>
+            <br>
+            <a href="https://neokyo.com/blog/kaiju-everything-you-need-to-know-about-japans-giant-monsters/" target="_blank">Neokyo</a>
+        </footer>
+    </div>
+
+    <script>
+        function flipCard(cardElement) {
+            const innerCard = cardElement.querySelector('.card-inner');
+            innerCard.classList.toggle('is-flipped');
+        }
+
+        function kaijuRoar(soundPath) {
+
+            var roar = new Audio(soundPath);
+            roar.play();
+
+            var title = document.getElementById('main-title');
+            title.classList.add('shake-title');
+
+            setTimeout(function () {
+                title.classList.remove('shake-title');
+            }, 4000);
+        }
+    </script>
+
+</body>
+
+</html>

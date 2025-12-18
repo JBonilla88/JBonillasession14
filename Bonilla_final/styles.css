@@ -1,0 +1,718 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+}
+
+body.diy-page {
+  background-image: url('images/diy background.jpg');
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#wrapper {
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 1000px;
+  border: 12px solid;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: #ffffff;
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  padding: 60px 20px;
+  text-shadow: 2px 2px 10px rgb(0, 0, 0, 1);
+  border-bottom: 5px solid #000;
+  position: relative;
+  order: 1;
+  flex: 1 0 100%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+body.home-page header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/home header.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+body.history-page header {
+  background: url('images/history header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.kaijus-page header {
+  background: url('images/godzilla header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -20px;
+}
+
+body.godzilla1962-page header {
+  background: url('images/godzilla1962 header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -50px;
+}
+
+body.godzillausa-page header {
+  background: url('images/godzillausa header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.kingkong-page header {
+  background: url('images/king kong header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -50px;
+}
+
+body.kingkong2005-page header {
+  background: url('images/king kong2005 header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -100px;
+}
+
+body.history-page {
+  background: url('images/history body.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.kaijus-page {
+  background: url('images/kaiju background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.godzilla1962-page {
+  background: url('images/godzilla1962 background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.godzillausa-page {
+  background: url('images/godzillausa background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.kingkong-page {
+  background: url('images/king kong background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.kingkong2005-page {
+  background: url('images/king kong2005 background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.history-page main {
+  background-image: url('images/history main.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kaijus-page main {
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+.godzilla1962-page main {
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+.godzillausa-page main {
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+  background: #191919;
+}
+
+.kingkong-page main {
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+.kingkong2005-page main {
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+  background: #61503d;
+}
+
+.godzillausa-page main p{
+  color: #0876cf;
+}
+
+main {
+  background: rgb(103, 103, 103);
+  order: 4;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 0;
+
+}
+
+nav {
+  background: rgb(0, 0, 0);
+  order: 2;
+  flex: 1 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-family: "Trade Winds", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.history-page nav {
+  background: #c4a98a;
+}
+
+.godzilla1962-page nav {
+  background: #422606;
+}
+
+.left-sidebar {
+  background: rgb(255, 255, 255);
+  order: 3;
+  flex: 0 0 15%;
+  min-width: 200px;
+  color: #000000;
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+.godzilla1962-page .left-sidebar {
+  background: rgb(70, 70, 70);
+  order: 3;
+  flex: 0 0 15%;
+  min-width: 200px;
+  color: #ffffff;
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+.godzillausa-page .left-sidebar {
+  background: #2b2b2b;
+  order: 3;
+  flex: 0 0 15%;
+  min-width: 200px;
+  color: #0876cf;
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+.kingkong2005-page .left-sidebar {
+  background: #344735;
+  order: 3;
+  flex: 0 0 15%;
+  min-width: 200px;
+  color: #784800;
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+
+.right-sidebar {
+  order: 5;
+  flex: 0 0 15%;
+  background: rgb(255, 255, 255);
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+.godzilla1962-page .right-sidebar {
+  order: 5;
+  flex: 0 0 15%;
+  background: rgb(70, 70, 70);
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+  color: #ffffff;
+}
+
+.godzillausa-page .right-sidebar {
+  background: #2b2b2b;
+  order: 5;
+  flex: 0 0 15%;
+  min-width: 200px;
+  color: #0876cf;
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+.kingkong2005-page .right-sidebar {
+  background: #344735;
+  order: 5;
+  flex: 0 0 15%;
+  min-width: 200px;
+  color: #784800;
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+
+footer {
+  background: rgb(69, 69, 69);
+  order: 6;
+  flex: 1 0 100%;
+}
+
+.history-page footer {
+  background: #c4a98a;
+}
+
+.godzilla1962-page footer {
+  background: #422606;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Trade Winds", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: #000000;
+  width: 100%;
+}
+
+.kaijus-page h1 {
+  color: #fcfcfc;
+}
+
+.godzilla1962-page h1 {
+  color: #fcfcfc;
+}
+
+.godzillausa-page h1 {
+  color: #0876cf;
+}
+
+.kingkong-page h1 {
+  color: #ffffff;
+}
+
+.kingkong2005-page h1 {
+  color: #febb5d;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Trade Winds", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.history-page h2 {
+  color: #ae1717;
+}
+
+.kaijus-page header h2 {
+  color: #fcfcfc;
+}
+
+h3 {
+  font-size: x-large;
+  text-decoration: underline;
+  font-family: "Trade Winds", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.godzillausa-page h3 {
+  color: #0876cf;
+}
+
+article {
+  color: rgb(0, 0, 0);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+.history-page li a {
+  background-color: #b18e68;
+}
+
+.godzilla1962-page li a {
+  background-color: #b18e68;
+}
+
+.kingkong2005-page li a {
+  background-color: #3f2a13;
+}
+
+li a:hover {
+  background-color: rgb(115, 4, 4);
+  color: rgb(255, 255, 255);
+}
+
+.godzilla1962-page li a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.godzillausa-page li a:hover {
+  background-color: #0876cf;
+  color: rgb(0, 0, 0);
+}
+
+.kingkong2005-page li a:hover {
+  background-color: #2d2d2d;
+  color: rgb(255, 255, 255);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  cursor: help;
+  border-radius: 5px;
+}
+
+#left-container {
+  left: 0px;
+}
+
+
+#right-container {
+  right: 0px;
+}
+
+
+.container {
+  background-color: #000000;
+  width: 15%;
+  top: 0px;
+  position: absolute;
+  height: 100%;
+  padding: 10px;
+}
+
+
+.kaiju-holder {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  left: -10px;
+  display: inline-block;
+}
+
+
+.kaiju {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  z-index: 100;
+}
+
+body.home-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/city.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+aside ul {
+  list-style-type: "☢";
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a {
+  color: #8a1c1c;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.godzilla1962-page aside ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.godzillausa-page aside ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.kingkong2005-page aside ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+
+aside ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  padding-left: 5px;
+
+}
+
+.kaiju-flex-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin: 0px;
+  flex: 0 0 300px;
+}
+
+.kaiju-description {
+  flex: 1;
+  padding: 10px;
+  background-color: rgb(103, 103, 103);
+  border-radius: 8px;
+}
+
+.history-page .kaiju-description {
+  background-color: rgba(239, 225, 191, 0.7);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-front img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border: none !important;
+  display: block;
+}
+
+.card-back {
+  background-color: #1a1a1a;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid #333;
+}
+
+.card-back p {
+  font-size: 0.9rem !important;
+  line-height: 1.2;
+  margin: 10px;
+}
+
+.card-back h3 {
+  font-size: 1.8rem !important;
+  margin-top: 0;
+  text-decoration: none;
+  font-family: "Trade Winds", cursive;
+}
+
+.kaiju-flex-container.reverse {
+  flex-direction: row-reverse;
+}
+
+@keyframes shake-animation {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+
+  10% {
+    top: -2px;
+    left: -2px;
+  }
+
+  20% {
+    top: 2px;
+    left: 0px;
+  }
+
+  30% {
+    top: 0px;
+    left: 2px;
+  }
+
+  40% {
+    top: 1px;
+    left: -1px;
+  }
+
+  50% {
+    top: -1px;
+    left: 2px;
+  }
+
+  60% {
+    top: -2px;
+    left: 1px;
+  }
+
+  70% {
+    top: 2px;
+    left: 1px;
+  }
+
+  80% {
+    top: -1px;
+    left: -1px;
+  }
+
+  90% {
+    top: 2px;
+    left: 2px;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+#main-title {
+  display: block;
+  width: 100%;
+  position: relative;
+  pointer-events: none;
+}
+
+.shake-title {
+  position: relative;
+  animation: shake-animation 0.5s;
+  animation-iteration-count: 8;
+  display: block;
+}
